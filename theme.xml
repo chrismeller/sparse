@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pluggable type="theme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://schemas.habariproject.org/pluggable/0.8">
+	<name>Sparse</name>
+	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
+	<author url="http://chrismeller.com">Chris Meller</author>
+	<url>http://chrismeller.com</url>
+	<version>1.0</version>
+	<template_engine>rawphpengine</template_engine>
+	<description><![CDATA[This is a simple, open theme.]]></description>
+
+	<areas>
+		<area name="nav">
+			<description><![CDATA[The navigation area]]></description>
+		</area>
+		<area name="footer">
+			<description><![CDATA[The footer area]]></description>
+		</area>
+	</areas>
+
+	<guid>0dd8046f-41d6-428f-bf43-6ac5dc147245</guid>
+</pluggable>
