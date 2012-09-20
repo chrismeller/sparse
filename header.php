@@ -82,5 +82,47 @@
 
 			<section id="content" class="span8">
 				<?php
-					echo Session::messages_out();
+
+					// get any session messages we need to display
+					$errors = Session::get_errors( true );
+					$notices = Session::get_notices( true );
+
+					if ( count( $errors ) > 0 ) {
+
+						?>
+
+							<div class="alert alert-error">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<?php
+									foreach ( $errors as $error ) {
+										?>
+											<p><?php echo $error; ?></p>
+										<?php
+									}
+								?>
+							</div>
+
+						<?php
+
+					}
+
+					if ( count( $notices ) > 0 ) {
+
+						?>
+
+							<div class="alert alert-info">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<?php
+									foreach ( $errors as $error ) {
+										?>
+											<p><?php echo $error; ?></p>
+										<?php
+									}
+								?>
+							</div>
+
+						<?php
+
+					}
+
 				?>
