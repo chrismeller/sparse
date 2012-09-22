@@ -15,6 +15,9 @@
 
 	<title><?php echo $title; ?></title>
 
+	<link rel="shortcut icon" href="<?php echo Site::get_url( 'site' ) . '/favicon.ico'; ?>">
+	<link rel="icon" type="image/png" href="<?php echo $theme->get_url( 'assets/img/favicon.png' ); ?>">
+
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="profile" href="http://microformats.org/profile/hcard">
