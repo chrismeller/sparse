@@ -37,3 +37,39 @@
 
 	?>
 </article>
+
+<?php
+
+	// if we're displaying a single post, include next and previous post links
+	if ( $request->display_entry ) {
+
+		$next = $post->ascend();        // next is higher in the list because we are in reverse chron order - so newer
+		$previous = $post->descend();   // previous is lower in the list because we are in reverse chron order - older
+
+		?>
+
+			<div class="pagination row">
+				<div class="span4">
+					<?php
+						if ( $previous ) {
+							?>
+								<a class="older" href="<?php echo $previous->permalink; ?>">Last Post <span class="section"><?php echo $previous->title_out; ?></span></a>
+							<?php
+						}
+					?>
+				</div>
+				<div class="span4 pull-right">
+					<?php
+						if ( $next ) {
+							?>
+								<a class="newer" href="<?php echo $next->permalink; ?>">Next Post <span class="section"><?php echo $next->title_out; ?></span></a>
+							<?php
+						}
+					?>
+				</div>
+			</div>
+
+		<?php
+	}
+
+?>
