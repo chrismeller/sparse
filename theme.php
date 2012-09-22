@@ -4,6 +4,11 @@
 
 		public function add_template_vars ( ) {
 
+			// if there is no $request object, we're probably in the admin - this is a dirty dirty hack
+			if ( !isset( $this->request ) ) {
+				return parent::add_template_vars();
+			}
+
 			$site_title = Options::get( 'title' );
 
 			// if a title has been set somewhere else, don't overwrite it
