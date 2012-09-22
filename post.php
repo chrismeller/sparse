@@ -9,8 +9,10 @@
 			</span>
 			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" rel="tooltip"><?php echo $content->pubdate->fuzzy; ?></time>
 			<meta itemprop="dateModified" content="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>">
+			<!--
 			<span> &middot; </span>
 			<a href="<?php echo $content->permalink; ?>#comments" class="comments" itemprop="discussionUrl"><?php echo $content->comments->moderated->count == 0 ? 'No Comments' : $content->comments->moderated->count . _n( 'Comment', 'Comments', $content->comments->moderated->count ); ?></a>
+			-->
 			<?php
 
 				if ( count( $content->tags ) > 0 ) {
