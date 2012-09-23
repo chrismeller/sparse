@@ -6,7 +6,7 @@
 
 			Format::apply( 'autop', 'post_content_out' );
 
-			Format::apply_with_hook_params( 'more', 'post_content_out', _t( 'Continue reading &rarr;' ), null, 1, true );
+			Format::apply_with_hook_params( 'more', 'post_content_out', _t( 'Continue reading &rarr;' ), null, 1, false );
 
 		}
 		public function add_template_vars ( ) {
