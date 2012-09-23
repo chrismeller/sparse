@@ -2,6 +2,13 @@
 
 	class Sparse extends Theme {
 
+		public function action_init_theme ( $theme ) {
+
+			Format::apply( 'autop', 'post_content_out' );
+
+			Format::apply_with_hook_params( 'more', 'post_content_out', _t( 'Continue reading &rarr;' ), null, 1, true );
+
+		}
 		public function add_template_vars ( ) {
 
 			// if there is no $request object, we're probably in the admin - this is a dirty dirty hack
