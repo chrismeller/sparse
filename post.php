@@ -17,9 +17,9 @@
 
 				if ( count( $content->tags ) > 0 ) {
 					?>
-						<span> &middot; Tagged </span>
-							<span itemprop="keywords" class="tags">
-							<?php echo Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>
+						<span> &middot; Supposedly about </span>
+						<span itemprop="keywords" class="tags">
+							<?php echo Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
 						</span>
 					<?php
 				}
