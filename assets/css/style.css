@@ -11,10 +11,6 @@ body {
 	height: 100%;
 }
 
-#left {
-	position: fixed;
-}
-
 #header {
 	padding-top: 8em;
 }
@@ -92,7 +88,7 @@ body {
 
 #content {
 	padding-top: 3em;
-	margin-left: 340px; /* #left width (300px) + padding to left of #left (20px) + padding to left of #content (20px) = 340px */
+	
 }
 
 #content h1.pagehead {
