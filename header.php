@@ -26,10 +26,6 @@
 
 	<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css">-->
 	<link rel="stylesheet" href="//d18pg74lwgn60w.cloudfront.net/v2.1.1/full/css/bootstrap.combined.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css">
-	<!--[if IE 7]>
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css">
-	<![endif]-->
 	<link rel="stylesheet" href="<?php echo $theme->get_url( 'assets/css/style.css' ); ?>">
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
