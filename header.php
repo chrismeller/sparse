@@ -76,7 +76,7 @@
 							<li><a href="https://github.com/chrismeller" title="GitHub" class="icon github" rel="tooltip">Github</a></li>
 							<li><a href="https://twitter.com/chrismeller" title="Twitter" class="icon twitter" rel="tooltip">Twitter</a></li>
 							<li><a href="http://flickr.com/mellertime" title="Flickr" class="icon flickr" rel="tooltip">Flickr</a></li>
-							<li><a href="https://www.google.com/search?q=mooses&tbm=isch" title="Mooses!" class="icon mooses" rel="tooltip">Mooses</a></li>
+							<li><a href="https://www.google.com/search?q=mooses&amp;tbm=isch" title="Mooses!" class="icon mooses" rel="tooltip">Mooses</a></li>
 						</ul>
 					</div>
 				</header>
