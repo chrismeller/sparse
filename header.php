@@ -95,9 +95,9 @@
 							<div class="alert alert-info">
 								<button type="button" class="close" data-dismiss="alert">x</button>
 								<?php
-									foreach ( $errors as $error ) {
+									foreach ( $notices as $notice ) {
 										?>
-											<p><?php echo $error; ?></p>
+											<p><?php echo $notice; ?></p>
 										<?php
 									}
 								?>
