@@ -7,11 +7,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//netdna.bootstrapcdn.com">
-	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-	<link rel="dns-prefetch" href="http://www.google-analytics.com">
-	<link rel="dns-prefetch" href="https://ssl.google-analytics.com">
+	<?php
+
+		echo $theme->header_prefetch();
+
+	?>
 
 	<title><?php echo $title; ?></title>
 
@@ -21,23 +21,6 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="profile" href="http://microformats.org/profile/hcard">
-
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-
-	<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css">-->
-	<link rel="stylesheet" href="//d18pg74lwgn60w.cloudfront.net/v2.1.1/full/css/bootstrap.combined.min.css">
-	<link rel="stylesheet" href="<?php echo $theme->get_url( 'assets/css/style.css' ); ?>">
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"></script>
-	<script src="<?php echo $theme->get_url( 'assets/js/index.js' ); ?>"></script>
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
-
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
-	<![endif]-->
 
 	<?php
 		echo $theme->header();
