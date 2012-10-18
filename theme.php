@@ -16,7 +16,7 @@
 			// override the default jquery with a cdn'd version
 			StackItem::register( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', '1.8.2' );
 			StackItem::register( 'bootstrap_js', 'https://b79aa4845dfa0330f3c1-8ab693c01194d150d70d8e544af6f6be.ssl.cf1.rackcdn.com/v2.1.1/full/js/bootstrap.min.js' )->add_dependency( 'jquery' );
-			StackItem::register( 'theme_js', $theme->get_url( 'assets/js/script.js' ), $theme->version )->add_dependency( 'bootstrap_js' );
+			StackItem::register( 'theme_js', $theme->get_url( 'assets/js/index.js' ), $theme->version )->add_dependency( 'bootstrap_js' );
 			StackItem::register( 'modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', '2.6.2' );
 			StackItem::register( 'html5shiv', array( '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js', null, '<!--[if lt IE 9]>%s<![endif]-->' ), '3.6' );
 
