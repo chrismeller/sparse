@@ -42,32 +42,6 @@
 
 		}
 
-		public function action_template_footer ( $theme ) {
-
-			$code = <<<SNIPPET
-<script type="text/javascript">
-  var GoSquared = {};
-  GoSquared.acct = "GSN-982377-V";
-  (function(w){
-    function gs(){
-      w._gstc_lt = +new Date;
-      var d = document, g = d.createElement("script");
-      g.type = "text/javascript";
-      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-      var s = d.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(g, s);
-    }
-    w.addEventListener ?
-      w.addEventListener("load", gs, false) :
-      w.attachEvent("onload", gs);
-  })(window);
-</script>
-SNIPPET;
-
-			echo $code;
-
-		}
-
 		public function add_template_vars ( ) {
 
 			// if there is no $request object, we're probably in the admin - this is a dirty dirty hack
