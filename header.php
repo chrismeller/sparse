@@ -47,15 +47,15 @@
 								<span class="nickname">@chrismeller</span>
 							</a>
 						</h1>
-						<h2 id="tagline" itemprop="description">Awesome Coder. Unashamed PHP Lover. Dot Net Dabbler. Mac User. nGinx Enthusiast. Open Data Addict. <a href="https://twitter.com/habariproject">@habari</a> Cabal Member. System Admin. Newly-settled <span class="adr"><abbr title="Austin - That's Texas, man!" class="locality" rel="tooltip">Austin<span class="hide">, <span class="region">TX</span></span></abbr></span> Resident. <a href="http://youshouldhirechris.com" title="You really should... Take my word for it." rel="tooltip">Hire Me</a>!</h2>
+						<h2 id="tagline" itemprop="description">Awesome Coder. Unashamed PHP Lover. Dot Net Dabbler. Mac User. nGinx Enthusiast. Open Data Addict. <a href="https://twitter.com/habariproject">@habari</a> Cabal Member. System Admin. Newly-settled <span class="adr"><abbr title="Austin - That's Texas, man!" class="locality" data-rel="tooltip">Austin<span class="hide">, <span class="region">TX</span></span></abbr></span> Resident. <a href="http://youshouldhirechris.com" title="You really should... Take my word for it." data-rel="tooltip">Hire Me</a>!</h2>
 					</hgroup>
 					<div class="navbar">
 						<ul class="social nav links">
-							<li><a href="https://chrismeller.com" title="Chris Meller" class="icon blog" rel="tooltip">Chris Meller</a></li>
-							<li><a href="https://github.com/chrismeller" title="GitHub" class="icon github" rel="tooltip">Github</a></li>
-							<li><a href="https://twitter.com/chrismeller" title="Twitter" class="icon twitter" rel="tooltip">Twitter</a></li>
-							<li><a href="http://flickr.com/mellertime" title="Flickr" class="icon flickr" rel="tooltip">Flickr</a></li>
-							<li><a href="https://www.google.com/search?q=mooses&amp;tbm=isch" title="Mooses!" class="icon mooses" rel="tooltip">Mooses</a></li>
+							<li><a href="https://chrismeller.com" title="Chris Meller" class="icon blog" data-rel="tooltip">Chris Meller</a></li>
+							<li><a href="https://github.com/chrismeller" title="GitHub" class="icon github" data-rel="tooltip">Github</a></li>
+							<li><a href="https://twitter.com/chrismeller" title="Twitter" class="icon twitter" data-rel="tooltip">Twitter</a></li>
+							<li><a href="http://flickr.com/mellertime" title="Flickr" class="icon flickr" data-rel="tooltip">Flickr</a></li>
+							<li><a href="https://www.google.com/search?q=mooses&amp;tbm=isch" title="Mooses!" class="icon mooses" data-rel="tooltip">Mooses</a></li>
 						</ul>
 					</div>
 				</header>

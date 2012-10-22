@@ -7,7 +7,7 @@
 			<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name"><?php echo $content->author->displayname; ?></span>
 			</span>
-			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
+			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
 			<meta itemprop="dateModified" content="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>">
 			<!--
 			<span> &middot; </span>
