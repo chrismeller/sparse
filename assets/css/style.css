@@ -136,10 +136,6 @@ abbr[data-original-title] {
 	display: none;
 }
 
-.pagination > [class*="span"]:first-child {
-	margin-left: 0;
-}
-
 .pagination a,
 .pagination p {
 	color: #262626;
