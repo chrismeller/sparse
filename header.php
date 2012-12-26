@@ -62,7 +62,7 @@
 
 			</div>
 
-			<section id="content" class="span8">
+			<section id="content" class="span7 offset1">
 				<?php
 
 					// get any session messages we need to display
