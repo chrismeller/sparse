@@ -41,11 +41,11 @@
 	?>
 
 		<div class="pagination row">
-			<div class="span3">
+			<div class="span2">
 				<?php echo $older_link; ?>
 			</div>
-			<div class="span2"><p class="of"><?php echo $from_to; ?></p></div>
-			<div class="span3 pull-right">
+			<div class="span3"><p class="of"><?php echo $from_to; ?></p></div>
+			<div class="span2 pull-right">
 				<?php echo $newer_link; ?>
 			</div>
 		</div>
