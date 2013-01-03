@@ -6,14 +6,11 @@ html {
 }
 
 body {
-	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 16px;
 	height: 100%;
-	color: #444;
-	line-height: 1.5em;
-	font-weight: 300;
+	color: #5a5a5a;
 }
 
+/* space out content in paragraphs or lists */
 p {
 	margin-bottom: 1.5em;
 }
@@ -23,20 +20,49 @@ li {
 	margin-bottom: 0.5em;
 }
 
-#header {
-	padding-top: 8em;
+.wrap {
+	padding: 1.5em;
 }
 
+
+#border {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	height: 5px;
+	background-color: #266DB6;
+}
+
+
+/* when they're this big, the bold weight of the font is too much */
 h1,
 h2,
 h3 {
 	font-weight: 300;
 }
 
+#header {
+	padding-top: 8em;
+}
+
 #header h2#tagline {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 100%;   		/* 16px */
+	line-height: 1.5em;		/* 24 px */
 	text-transform: lowercase;
+}
+
+
+
+
+#header .social {
+	list-style: none;
+	margin: 0;
+}
+
+#header .social li {
+	width: 36px;
 }
 
 #header .icon {
@@ -53,7 +79,7 @@ h3 {
 	color: rgba(66, 63, 55, 0.15);
 	opacity: 0.15;
 
-	font-size: 26px;
+	font-size: 197%;		/* 26px */
 	line-height: 40px;
 
 	transition: opacity 0.25s;
@@ -89,34 +115,31 @@ h3 {
 	background-position: 0 0;
 }
 
-#border {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 
-	height: 5px;
-	background-color: #266DB6;
-}
 
 #content {
 	padding-top: 3em;
-	
+}
+
+#content .wrap-blah {
+	max-width: 480px;
 }
 
 #content h1.pagehead {
 	color: #262626;
 	opacity: 0.25;
 	text-transform: uppercase;
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 100%;     		/* 16px */
+	line-height: 1.375em;	/* 22px */
 	letter-spacing: 2px;
 	font-weight: normal;
 }
 
+/* make the tag name bold in the "Latest Posts in xxx" header */
 #content h1.pagehead .section {
 	font-weight: bold;
 }
+
 
 .post {
 	margin: 0;
@@ -133,21 +156,9 @@ h3 {
 .pubdata {
 	margin-bottom: 10px;
 	opacity: 0.6;
-	font-size: 90%;
+	font-size: 90%;		/* between 11 and 12px */
 }
 
-/* shrink all the heading tags in post body content */
-section.content h1 {
-	font-size: 2em;
-}
-
-section.content h2 {
-	font-size: 1.5em;
-}
-
-section.content h3 {
-	font-size: 1.333em;
-}
 
 time[title],
 time[data-original-title] {
@@ -167,8 +178,8 @@ abbr[data-original-title] {
 	color: #262626;
 	opacity: 0.25;
 	text-transform: uppercase;
-	font-size: 10px;
-	line-height: 14px;
+	font-size: 77%;    		/* 10px */
+	line-height: 1.4em;	/* 14px */
 	letter-spacing: 2px;
 
 	transition: opacity 0.25s;
