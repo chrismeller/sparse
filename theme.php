@@ -4,9 +4,9 @@
 
 		public function action_init_theme ( $theme ) {
 
-			\Habari\Format::apply( 'autop', 'post_content_out' );
+			\Habari\Format::apply( array( '\Habari\Format', 'autop' ), 'post_content_out' );
 
-			\Habari\Format::apply_with_hook_params( 'more', 'post_content_out', _t( 'Continue reading &rarr;' ), null, 1, false );
+			\Habari\Format::apply_with_hook_params( array( '\Habari\Format', 'more' ), 'post_content_out', _t( 'Continue reading &rarr;' ), null, 1, false );
 
 			// register all our assets
 			\Habari\StackItem::register( 'source_sans_pro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' );
