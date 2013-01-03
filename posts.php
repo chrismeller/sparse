@@ -40,12 +40,12 @@
 
 	?>
 
-		<div class="pagination row">
-			<div class="span2">
+		<div class="pagination row-fluid">
+			<div class="span4">
 				<?php echo $older_link; ?>
 			</div>
-			<div class="span3"><p class="of"><?php echo $from_to; ?></p></div>
-			<div class="span2 pull-right">
+			<div class="span4"><p class="of"><?php echo $from_to; ?></p></div>
+			<div class="span4 pull-right">
 				<?php echo $newer_link; ?>
 			</div>
 		</div>

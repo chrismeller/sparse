@@ -33,7 +33,7 @@
 
 	<div id="page" class="container-fluid">
 
-		<div class="row">
+		<div class="row-fluid">
 
 			<div id="left" class="span4">
 
