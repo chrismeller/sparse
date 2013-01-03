@@ -70,7 +70,7 @@
 		?>
 
 			<div class="pagination row">
-				<div class="span4">
+				<div class="span3">
 					<?php
 						if ( $previous ) {
 							?>
@@ -79,7 +79,7 @@
 						}
 					?>
 				</div>
-				<div class="span4 pull-right">
+				<div class="span3 pull-right">
 					<?php
 						if ( $next ) {
 							?>
