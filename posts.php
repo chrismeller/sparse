@@ -40,12 +40,12 @@
 
 	?>
 
-		<div class="pagination row">
-			<div class="span2">
+		<div class="pagination yui3-g">
+			<div class="yui3-u-2-7">
 				<?php echo $older_link; ?>
 			</div>
-			<div class="span3"><p class="of"><?php echo $from_to; ?></p></div>
-			<div class="span2 pull-right">
+			<div class="yui3-u-3-7"><p class="of"><?php echo $from_to; ?></p></div>
+			<div class="yui3-u-2-7 pull-right">
 				<?php echo $newer_link; ?>
 			</div>
 		</div>

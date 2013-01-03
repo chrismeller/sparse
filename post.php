@@ -69,8 +69,8 @@
 
 		?>
 
-			<div class="pagination row">
-				<div class="span4">
+			<div class="pagination yui3-g">
+				<div class="yui3-u-1-2">
 					<?php
 						if ( $previous ) {
 							?>
@@ -79,7 +79,7 @@
 						}
 					?>
 				</div>
-				<div class="span4 pull-right">
+				<div class="yui3-u-1-2 pull-right">
 					<?php
 						if ( $next ) {
 							?>
