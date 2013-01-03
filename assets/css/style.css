@@ -23,6 +23,10 @@ li {
 	margin-bottom: 0.5em;
 }
 
+#page {
+	padding-bottom: 2em;
+}
+
 #header {
 	padding-top: 8em;
 }
