@@ -1,0 +1,49 @@
+body {
+	font: 16px / 1.5em 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', clean, sans-serif;;
+}
+
+/* these are the proportions they use in bootstrap - we don't recaculate anything, let the browser do it based on the base font size */
+h1 {
+	font-size: 275%;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: 225%;
+}
+
+h3 {
+	font-size: 175%;
+}
+
+h4 {
+	font-size: 125%;
+}
+
+h5 {
+	font-size: 100%;
+}
+
+h6 {
+	font-size: 85%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
+}
+
+/* make links look like they do in bootstrap */
+a {
+	color: #0088cc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+
+/* useful helper classes from bootstrap */
+.hide {
+	display: none;
+}
