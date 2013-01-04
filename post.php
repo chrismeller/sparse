@@ -7,7 +7,7 @@
 			<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name"><?php echo $content->author->displayname; ?></span>
 			</span>
-			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
+			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo \Habari\MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
 			<meta itemprop="dateModified" content="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>">
 			<!--
 			<span> &middot; </span>
@@ -19,7 +19,7 @@
 					?>
 						<span> &middot; Supposedly about </span>
 						<span itemprop="keywords" class="tags">
-							<?php echo Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
+							<?php echo \Habari\Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
 						</span>
 					<?php
 				}

@@ -15,7 +15,7 @@
 
 	<title><?php echo $title; ?></title>
 
-	<link rel="shortcut icon" href="<?php echo Site::get_url( 'site' ) . '/favicon.ico'; ?>">
+	<link rel="shortcut icon" href="<?php echo \Habari\Site::get_url( 'site' ) . '/favicon.ico'; ?>">
 	<link rel="icon" type="image/png" href="<?php echo $theme->get_url( 'assets/img/favicon.png' ); ?>">
 
 	<meta name="viewport" content="width=device-width">
@@ -42,7 +42,7 @@
 					<header id="header" class="vcard">
 						<hgroup>
 							<h1 id="name" itemprop="name">
-								<a class="url" href="<?php echo Site::get_url( 'habari' ); ?>">
+								<a class="url" href="<?php echo \Habari\Site::get_url( 'habari' ); ?>">
 										<span class="fn n hide">
 											<span class="given-name">Chris</span> <span class="family-name">Meller</span>
 										</span>
