@@ -73,8 +73,8 @@
 					<?php
 
 						// get any session messages we need to display
-						$errors = Session::get_errors( true );
-						$notices = Session::get_notices( true );
+						$errors = \Habari\Session::get_errors( true );
+						$notices = \Habari\Session::get_notices( true );
 
 						if ( count( $errors ) > 0 ) {
 
