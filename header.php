@@ -76,7 +76,7 @@
 
 							?>
 
-								<div class="alert alert-error">
+								<div class="alert error">
 									<button type="button" class="close" data-dismiss="alert">x</button>
 									<?php
 										foreach ( $errors as $error ) {
@@ -95,7 +95,7 @@
 
 							?>
 
-								<div class="alert alert-info">
+								<div class="alert info">
 									<button type="button" class="close" data-dismiss="alert">x</button>
 									<?php
 										foreach ( $notices as $notice ) {
