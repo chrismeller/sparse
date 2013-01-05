@@ -8,6 +8,8 @@ html {
 body {
 	height: 100%;
 	color: #5a5a5a;
+
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', clean, sans-serif;
 }
 
 /* space out content in paragraphs or lists */

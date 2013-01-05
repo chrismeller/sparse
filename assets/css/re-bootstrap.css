@@ -1,5 +1,5 @@
 body {
-	font: 16px / 1.5em 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', clean, sans-serif;;
+	font: 16px / 1.5em 'Helvetica Neue', 'Helvetica', clean, sans-serif;
 }
 
 /* these are the proportions they use in bootstrap - we don't recaculate anything, let the browser do it based on the base font size */
