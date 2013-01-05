@@ -66,6 +66,10 @@
 				return parent::add_template_vars();
 			}
 
+			// get any session messages we need to display
+			$this->errors = \Habari\Session::get_errors( true );
+			$this->notices = \Habari\Session::get_notices( true );
+
 			$site_title = \Habari\Options::get( 'title' );
 
 			// if a title has been set somewhere else, don't overwrite it
