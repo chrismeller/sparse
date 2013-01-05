@@ -26,11 +26,11 @@
 				->add_dependency( 'yui-base' );
 
 
-			\Habari\StackItem::register( 're-bootstrap', $theme->get_url( 'assets/css/re-bootstrap.css' ) );
-			\Habari\StackItem::register( 'theme_css', $theme->get_url( 'assets/css/style.css' ), $theme->version )
+
+			// our single stylesheet, which uses LESS, and @import's all the modules we need
+			\Habari\StackItem::register( 'theme_css', $theme->get_url( 'assets/less/style.less' ), $theme->version )
 				->add_dependency( 'source_sans_pro' )
-				->add_dependency( 'yui-button' )		// the last in the YUI chain
-				->add_dependency( 're-bootstrap');
+				->add_dependency( 'yui-button' );		// the last in the YUI chain
 
 			// override the default jquery with a cdn'd version
 			\Habari\StackItem::register( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', '1.8.2' );
