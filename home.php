@@ -4,7 +4,7 @@
 
 	?>
 
-		<div id="posts" itemprop="blogPosts">
+		<div id="posts">
 			<?php
 				echo $theme->content( $posts );
 			?>
