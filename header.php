@@ -47,7 +47,7 @@
 								<span class="nickname">@chrismeller</span>
 							</a>
 						</h1>
-						<h2 id="tagline" itemprop="description">Awesome Coder. Unashamed PHP Lover. Dot Net Dabbler. Mac User. nGinx Enthusiast. Open Data Addict. <a href="https://twitter.com/habariproject">@habari</a> Cabal Member. System Admin. Newly-settled <span class="adr"><abbr title="Austin - That's Texas, man!" class="locality" data-rel="tooltip">Austin<span class="hide">, <span class="region">TX</span></span></abbr></span> Resident. <a href="http://youshouldhirechris.com" title="You really should... Take my word for it." data-rel="tooltip">Hire Me</a>!</h2>
+						<h2 id="tagline" itemprop="description"><span class="role">Awesome Coder</span>. Unashamed PHP Lover. Dot Net Dabbler. Mac User. nGinx Enthusiast. Open Data Addict. <a href="https://twitter.com/habariproject">@habari</a> Cabal Member. System Admin. Newly-settled <span class="adr"><abbr title="Austin - That's Texas, man!" class="locality" data-rel="tooltip">Austin<span class="hide">, <span class="region">TX</span></span></abbr></span> Resident. <a href="http://youshouldhirechris.com" title="You really should... Take my word for it." data-rel="tooltip">Hire Me</a>!</h2>
 					</hgroup>
 					<div class="navbar">
 						<ul class="social nav links">
