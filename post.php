@@ -1,4 +1,4 @@
-<article id="post-<?php echo $content->id; ?>" class="<?php echo $content->css_class(); ?>" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php echo $content->id; ?>" class="<?php echo $content->css_class(); ?>" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<header class="metadata">
 		<h1 class="post-title" itemprop="name">
 			<a href="<?php echo $content->permalink; ?>" itemprop="url"><?php echo $content->title_out; ?></a>
