@@ -11,7 +11,6 @@
 			// register all our assets
 			\Habari\StackItem::register( 'source_sans_pro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' );
 
-			//\Habari\StackItem::register( 'yui-base', 'http://yui.yahooapis.com/combo?3.8.0/build/cssfonts/cssfonts-min.css&3.8.0/build/cssreset/cssreset-min.css&3.8.0/build/cssbase/cssbase-min.css', '3.8.0' );
 			\Habari\StackItem::register( 'yui-fonts', 'http://yui.yahooapis.com/3.8.0/build/cssfonts/cssfonts-min.css', '3.8.0' );
 			\Habari\StackItem::register( 'yui-reset', 'http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css', '3.8.0' )
 				->add_dependency( 'yui-fonts' );
