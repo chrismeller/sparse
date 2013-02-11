@@ -10,7 +10,7 @@
 					?>
 						<span>Supposedly about </span>
 						<span itemprop="keywords" class="tags">
-							<?php echo Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
+							<?php echo \Habari\Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
 						</span>
 					<?php
 				}
@@ -34,13 +34,13 @@
 							<span itemprop="name"><?php echo $content->author->displayname; ?></span>
 						</span>
 						<span class="pubdate">
-							Originally published <time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
+							Originally published <time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo \Habari\MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
 							<?php
 
 								// note the period at the end of the update date, and beginning of the meta tag if there isn't one... that's important.
 
 								// has it been updated more recently?
-								if ( $content->updated > $content->pubdate && ( $content->updated->int - $content->pubdate->int ) > HabariDateTime::MINUTE ) {
+								if ( $content->updated > $content->pubdate && ( $content->updated->int - $content->pubdate->int ) > \Habari\DateTime::MINUTE ) {
 
 									?>
 
@@ -49,7 +49,7 @@
 									<?php
 
 								}
-								else if ( $content->modified > $content->pubdate && ( $content->modified->int - $content->pubdate->int ) > HabariDateTime::MINUTE ) {
+								else if ( $content->modified > $content->pubdate && ( $content->modified->int - $content->pubdate->int ) > \Habari\DateTime::MINUTE ) {
 
 									?>
 

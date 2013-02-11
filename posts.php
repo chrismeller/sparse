@@ -20,8 +20,8 @@
 		$older_link = $theme->next_page_link( $older_text, array( 'prev-page', 'older', 'previous' ) );
 		$newer_link = $theme->prev_page_link( $newer_text, array( 'next-page', 'newer', 'next' ) );
 
-		$older_link = MultiByte::str_replace( 'title="' . $older_text . '"', 'title="' . $older_title . '"', $older_link );
-		$newer_link = MultiByte::str_replace( 'title="' . $newer_text . '"', 'title="' . $newer_title . '"', $newer_link );
+		$older_link = \Habari\MultiByte::str_replace( 'title="' . $older_text . '"', 'title="' . $older_title . '"', $older_link );
+		$newer_link = \Habari\MultiByte::str_replace( 'title="' . $newer_text . '"', 'title="' . $newer_title . '"', $newer_link );
 	}
 	else {
 		$older = _t( 'Older Posts' );
@@ -32,7 +32,7 @@
 	}
 
 	// and what posts are we looking at?
-	$pagination = isset( $posts->get_param_cache['limit'] ) ? $posts->get_param_cache['limit'] : Options::get( 'pagination' );
+	$pagination = isset( $posts->get_param_cache['limit'] ) ? $posts->get_param_cache['limit'] : \Habari\Options::get( 'pagination' );
 	$from_post_num = ( ( $page - 1 ) * $pagination + 1 );
 	$to_post_num = $from_post_num + count( $posts ) - 1;
 	$total_posts = $posts->count_all();
