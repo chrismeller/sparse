@@ -4,20 +4,11 @@
 			<a href="<?php echo $content->permalink; ?>" itemprop="url"><?php echo $content->title_out; ?></a>
 		</h1>
 		<div class="pubdata">
-			<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-				<span itemprop="name"><?php echo $content->author->displayname; ?></span>
-			</span>
-			<time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
-			<meta itemprop="dateModified" content="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>">
-			<!--
-			<span> &middot; </span>
-			<a href="<?php echo $content->permalink; ?>#comments" class="comments" itemprop="discussionUrl"><?php echo $content->comments->moderated->count == 0 ? 'No Comments' : $content->comments->moderated->count . _n( 'Comment', 'Comments', $content->comments->moderated->count ); ?></a>
-			-->
 			<?php
 
 				if ( count( $content->tags ) > 0 ) {
 					?>
-						<span> &middot; Supposedly about </span>
+						<span>Supposedly about </span>
 						<span itemprop="keywords" class="tags">
 							<?php echo Format::tag_and_list( $content->tags, ', ', ', and ', true, ' and ' ); ?>.
 						</span>
@@ -36,6 +27,50 @@
 		if ( $request->display_entry ) {
 
 			?>
+
+				<footer class="metadata">
+					<div class="pubdata">
+						<span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name"><?php echo $content->author->displayname; ?></span>
+						</span>
+						<span class="pubdate">
+							Originally published <time title="<?php echo $content->pubdate->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->pubdate->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="datePublished" data-rel="tooltip"><?php echo MultiByte::ucfirst( $content->pubdate->fuzzy ); ?></time>
+							<?php
+
+								// note the period at the end of the update date, and beginning of the meta tag if there isn't one... that's important.
+
+								// has it been updated more recently?
+								if ( $content->updated > $content->pubdate && ( $content->updated->int - $content->pubdate->int ) > HabariDateTime::MINUTE ) {
+
+									?>
+
+										and updated <time title="<?php echo $content->updated->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="dateModified" data-rel="tooltip"><?php echo $content->pubdate->friendly( 1, false, $content->updated ); ?> later</time>.
+
+									<?php
+
+								}
+								else if ( $content->modified > $content->pubdate && ( $content->modified->int - $content->pubdate->int ) > HabariDateTime::MINUTE ) {
+
+									?>
+
+										and tweaked <time title="<?php echo $content->modified->format( 'l, F jS, Y \a\t g:m a' ); ?>" datetime="<?php echo $content->modified->format( 'Y-m-d\TH:i:s\Z' ); ?>" itemprop="dateModified" data-rel="tooltip"><?php echo $content->pubdate->friendly( 1, false, $content->modified ); ?> later</time>.
+
+									<?php
+
+								}
+								else {
+									// just spit out a meta tag, we always want google to index the updated date
+									?>
+
+										.<meta itemprop="dateModified" content="<?php echo $content->updated->format( 'Y-m-d\TH:i:s\Z' ); ?>">
+
+									<?php
+								}
+
+							?>
+						</span>
+					</div>
+				</footer>
 
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
