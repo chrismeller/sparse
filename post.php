@@ -77,6 +77,12 @@
 					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 					var disqus_shortname = 'chrismeller'; // required: replace example with your forum shortname
 
+					var disqus_url = window.location.href;
+					var disqus_url_pieces = disqus_url.split("://");
+					if ( disqus_url_pieces.length > 1 ) {
+						disqus_url = "http://" + disqus_url_pieces[1];
+					}
+
 					/* * * DON'T EDIT BELOW THIS LINE * * */
 					(function() {
 						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
