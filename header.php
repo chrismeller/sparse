@@ -47,7 +47,7 @@
 								<span class="nickname">@chrismeller</span>
 							</a>
 						</h1>
-						<h2 id="tagline" itemprop="description"><span class="role">Awesome Coder</span>. Unashamed PHP Lover. Dot Net Dabbler. Mac User. nGinx Enthusiast. Open Data Addict. Frequent FOIA Filer. <a href="https://twitter.com/habari">@habari</a> Cabal Member. System Admin. Nerd.</h2>
+						<h2 id="tagline" itemprop="description"><span class="role">Awesome Coder</span>. Unashamed PHP Lover. Dot Net Developer. Mac User. nGinx Enthusiast. Open Data Addict. Frequent FOIA Filer. <a href="https://twitter.com/habari">@habari</a> Cabal Member. System Admin. Nerd.</h2>
 					</hgroup>
 					<div class="navbar">
 						<ul class="social nav links">
